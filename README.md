@@ -23,17 +23,11 @@ Open Powershell / CMD prompt (Terminal)
 check Python version: 
 
 ```
-
 python -V
-
 ```
-
 check PIP version:
-
 ```
-
 pip -V
-
 ```
 
 ### install Git 

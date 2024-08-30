@@ -43,7 +43,7 @@ https://git-scm.com/downloads
 after install go to the directory where you would run the project:
 ```
 mkdir moderntimes
-cd .moderntimes
+cd .\moderntimes
 ```
 
 clone the project:

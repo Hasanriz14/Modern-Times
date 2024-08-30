@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/static/index.js" defer></script>
+    <title>NYC Times Data</title>
+  </head>
+  <body>
+    <div class="main-head">
+      <img src="/assets/2.png" alt="logo" />
+      <h1>Modern Times</h1>
+    </div>
+    <hr />
+    <div class="get-api">
+      <form action="" method="get"id="apiKeyForm">
+        <label for="api_id">Enter API key: </label>
+        <input
+          type="text"
+          name="api_id"
+          id="api_id"
+          required
+          minlength="15"
+          maxlength="50"
+          size="50"
+          placeholder="*required"
+        />
+        <button class="sub_button" type="submit">Submit</button>
+      </form>
+      <br>
+      <a class="get-key" href="https://developer.nytimes.com/accounts/login"
+        >Get your own API Key...</a
+      >
+      <br>
+      <span>-----------or------------</span>
+      <p>Use this : <br /></p>
+      <div class="copy-command">
+        <code>lNzfyQS219cNmSyL60TExbuVKsGugCBz</code>
+        <button class="copy-btn" onclick="copyToClipboard()">&#128203</button>
+    
+      </div>
+          </div>
+
+          <footer>
+
+          </footer>
+
+  </body>
+</html>

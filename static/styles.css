@@ -1,0 +1,171 @@
+/* Base Styles */
+:root {
+  --primary-bg: rgb(121, 206, 209);
+  --secondary-bg: azure;
+  --button-bg: #fbeee0;
+  --button-border: #422800;
+  --button-text: #422800;
+  --hover-color: #9e3c56;
+}
+
+body {
+  background-color: var(--primary-bg);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.get-api {
+  display: flex;
+  padding: 5% 2%;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--secondary-bg);
+  border-radius: 15px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.get-key {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.get-key:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+}
+
+.copy-command {
+  background-color: rgb(209, 204, 204);
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  font-family: monospace;
+  word-break: break-all;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  border-radius: 15px;
+  padding: 6px;
+  vertical-align: middle;
+  transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+  background-color: #3c7f9e;
+}
+
+.main-head {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Jersey 10", sans-serif;
+  font-size: clamp(1.5rem, 5vw, 3.2rem);
+  font-weight: 500;
+  margin: 20px 0;
+  padding-left: 15px;
+}
+
+input {
+  border: 2px solid var(--button-border);
+  background-color: #f8f8f9;
+  padding: 10px 15px;
+  border-radius: 30px;
+  box-shadow: var(--button-border) 4px 4px 0 0;
+  color: var(--button-text);
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+}
+input:focus{
+  outline: none;
+}
+
+/* Buttons */
+.sub_button {
+  background-color: var(--button-bg);
+  border: 2px solid var(--button-border);
+  border-radius: 30px;
+  box-shadow: var(--button-border) 4px 4px 0 0;
+  color: var(--button-text);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin: 10px 0;
+}
+
+.sub_button:hover {
+  background-color: #fff;
+}
+
+.sub_button:active {
+  box-shadow: var(--button-border) 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .get-api {
+    padding: 30px 15px;
+  }
+  
+  .copy-command {
+    font-size: 0.9rem;
+  }
+  
+  input, .sub_button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .get-api {
+    padding: 20px 10px;
+  }
+  
+  .copy-command {
+    font-size: 0.8rem;
+  }
+  
+  input, .sub_button {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
+  
+  .copy-btn {
+    font-size: 1.2rem;
+  }
+  .main-head{
+    flex-direction: column;
+  }
+}
